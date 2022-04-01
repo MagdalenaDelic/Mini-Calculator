@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap");
+
+* {
+  font-family: "Jura", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #091921;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(3, 38, 153), rgb(214, 105, 241));
+  clip-path: circle(20% at 25% 30%);
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(211, 125, 178), rgb(139, 10, 53));
+  clip-path: circle(20% at 75% 80%);
+}
+
+.container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+  box-shadow: 5px 5px 40px rgb(0, 0, 0);
+  height: 500px;
+  width: 500px;
+}
+.container .container1 {
+  position: relative;
+  display: grid;
+  align-items: center;
+  padding: 10px;
+}
+.buttons {
+  padding: 25px;
+  font-weight: bold;
+  align-items: stretch;
+}
+.buttons button {
+  font-weight: bold;
+  margin: 1px;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #0919218f;
+  color: white;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+input {
+  background-color: #0919218f;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+}
+.display {
+  background-color: #091921e3;
+  height: 150px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.display h3 {
+  color: white;
+  font-size: 2rem;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
